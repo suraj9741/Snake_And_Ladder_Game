@@ -39,6 +39,9 @@ public class App
 			if(player1Position < 0) {
 				player1Position = setPosition();
 			}
+			else if(player1Position > 100) {
+				player1Position = player1Position - rollDieValue;
+			}
 			System.out.println(i+" = "+ player1Position);
 			i++;
 		}
