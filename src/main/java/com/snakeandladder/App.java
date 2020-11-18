@@ -45,12 +45,13 @@ public class App
 			System.out.println(i+" = "+ player1Position);
 			i++;
 		}
+		System.out.println("Dies roll : "+ (i-1) + "\nPlayer final position : " + player1Position);
 		return player1Position;
 	}
 	public static void main( String[] args )
 	{
 		System.out.println( "---------------------Welcome in Snake and ladder Game---------------------" );
 		int player1Position = setPosition();
-		System.out.println(checkDestination(player1Position));
+		checkDestination(player1Position);
 	}
 }
